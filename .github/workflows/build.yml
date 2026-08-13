@@ -3,10 +3,10 @@ name: Build Halfwake APK
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: {}
+  workflow_dispatch: {}   # adds a manual "Run workflow" button on GitHub
 
 permissions:
-  contents: write
+  contents: write   # needed so the workflow can publish a Release
 
 jobs:
   build:
